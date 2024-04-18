@@ -16,6 +16,8 @@ pip install django
 
 pip install djangorestframework
 
+pip install drf-yasg
+
 
 
 python manage.py makemigrations
