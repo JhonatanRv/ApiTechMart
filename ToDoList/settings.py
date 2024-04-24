@@ -79,18 +79,24 @@ WSGI_APPLICATION = 'ToDoList.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'produtos',
+#        'USER': 'admin',
+#        'PASSWORD': 'emanuele',
+#        'HOST': 'database-1.clgmi80su2gp.us-east-1.rds.amazonaws.com',
+#        'PORT': '3306',  # Porta padrão do mysql
+#    }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'produtos',
-        'USER': 'admin',
-        'PASSWORD': 'emanuele',
-        'HOST': 'database-1.clgmi80su2gp.us-east-1.rds.amazonaws.com',
-        'PORT': '3306',  # Porta padrão do mysql
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / "db.sqlite3",
     }
-
 }
-  
+
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 

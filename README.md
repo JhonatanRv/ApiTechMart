@@ -7,10 +7,10 @@ cd venv/Scripts
 activate
 
 
+cd ..
+cd ..
 
 pip install mysqlclient
-
-cd api-main
 
 pip install django
 
